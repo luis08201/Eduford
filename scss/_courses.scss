@@ -1,0 +1,130 @@
+@import 'normalize';
+
+.courses {
+    margin-top: 112px;
+
+    &__header {
+
+        &--secondheading {
+            text-transform: capitalize;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        &--paragraph {
+            color: #777;
+            text-align: center;
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        &--box {
+            background-color: #FFF3F3;
+            padding: 35px 24px;
+            border-radius: 12px;
+            transition: box-shadow 640ms ease-in;
+
+            &:hover,
+            &:focus {
+                box-shadow: 4px 3px 38px -16px rgba(0, 0, 0, 0.6);
+                -webkit-box-shadow: 4px 3px 38px -16px rgba(0, 0, 0, 0.6);
+                -moz-box-shadow: 4px 3px 38px -16px rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        &--middleheading {
+            margin-bottom: 28px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        &--paragraph {
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__header {
+            &--paragraph {
+                margin-bottom: 41px;
+            }
+        }
+
+        &__body {
+            flex-direction: row;
+            gap: 21px;
+
+            &--box {
+                background-color: #FFF3F3;
+                padding: 35px 24px;
+                border-radius: 12px;
+                transition: box-shadow 640ms ease-in;
+            }
+        }
+    }
+}
+
+.our-facilities {
+    margin-top: 112px;
+
+    &__header {
+        &--secondheading {
+            text-transform: capitalize;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        &--paragraph {
+            color: #777;
+            text-align: center;
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        &--picture {
+            margin-bottom: 29px;
+        }
+
+        &--middleheading {
+            margin-bottom: 23px;
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+
+        &--paragraph {
+            color: #777;
+        }
+
+        &--img {
+            display: block;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__header {
+            &--paragraph {
+                margin-bottom: 41px;
+            }
+        }
+
+        &__body {
+            flex-direction: row;
+            gap: 21px;
+        }
+    }
+}

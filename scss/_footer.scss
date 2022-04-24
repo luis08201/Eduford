@@ -1,0 +1,51 @@
+@import 'normalize';
+
+.footer {
+    margin-top: 155px;
+    padding: 0 21px;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 42px;
+
+        &--middleheading {
+            text-align: center;
+            margin-bottom: 44px;
+        }
+
+        &--paragraph {
+            text-align: center;
+            margin-bottom: 53px;
+            color: #777;
+        }
+
+        &--credits {
+            margin-bottom: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #777;
+            transition: color 0.5s ease;
+
+            &:hover,
+            &:focus {
+                color: #EC4235;
+            }
+        }
+
+        &--cta {
+            text-align: center;
+            text-decoration: none;
+            color: #777;
+            transition: color 0.5s ease;
+
+            &:hover,
+            &:focus {
+                color: #EC4235;
+            }
+        }
+    }
+
+}
